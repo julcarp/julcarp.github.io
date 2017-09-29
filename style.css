@@ -1,0 +1,179 @@
+@font-face {
+    font-family: fancyFont;
+    src: url(alex-brush/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+    font-family: fancyFont;
+    src: url(euphoria);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    display: contents;
+}
+
+header {
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(251, 81, 87, .5);
+    color: white;
+}
+
+nav {
+    padding: 0px;
+    text-align: center;
+}
+
+img {
+    width=10px;
+    height=10px;
+}
+
+#section1 {
+    background-image: url(cable.jpg);
+    background-size: cover;
+    padding: 0;
+    height: 900px;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    margin-bottom: -70px;
+}
+
+#section2 {
+    background-image: url(glasses.jpg);
+    padding: 0;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    margin-bottom: -70px;
+}
+
+#section3 {
+    background-image: url(pineapple.jpg);
+    padding: 0;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    margin-bottom: -70px;
+}
+
+#section4 {
+    background-image: url(whale.jpg);
+    padding: 0;
+    background-size: cover;
+    height: 900px;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    margin-bottom: -70px;
+}
+
+#section4 p {
+    font-size: 25px;
+    margin: 30px 150px;
+    text-align: left;
+    padding: 10px;
+}
+
+#section5 {
+    background-image: url(tech.jpg);
+    padding: 0;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    margin-bottom: -70px;
+}
+
+#projects {}
+
+#resume {}
+
+#about {}
+
+#contact {}
+
+a:link {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    margin: 0;
+    background-color: #333;
+    color: white;
+    height: 100px;
+    padding: 10px;
+    padding-top: 10px;
+    margin-bottom: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+a:hover {
+    color: wheat;
+}
+
+a:visited {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 130px;
+    font-family: fancyFont;
+    text-align: center;
+    margin-top: 250px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 70px;
+    margin: 0;
+    font-family: fancyFont;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    padding: 0px;
+    margin: 0;
+}
+
+p {
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+li {
+    display: inline;
+    padding: inherit;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+div {
+    margin: 0;
+    display: flow-root;
+}
