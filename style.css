@@ -35,7 +35,7 @@ nav {
 }
 
 #section1 {
-    background-image: url(images/cable.jpg);
+    /*background-image: url(images/cable.jpg);*/
     background-size: cover;
     background-attachment: fixed;
     padding: 0;
@@ -56,7 +56,7 @@ nav {
 }
 
 #section3 {
-    background-image: url(images/pineapple.jpg);
+    /*background-image: url(images/pineapple.jpg);*/
     padding: 0;
     height: 900px;
     background-attachment: fixed;
@@ -67,7 +67,7 @@ nav {
 }
 
 #section4 {
-    background-image: url(images/whale.jpg);
+    /*background-image: url(images/whale.jpg);*/
     padding: 0;
     background-size: cover;
     height: 900px;
@@ -84,7 +84,7 @@ nav {
 }
 
 #section5 {
-    background-image: url(tech.jpg);
+    /*background-image: url(tech.jpg);*/
     padding: 0;
     height: 900px;
     background-size: cover;
