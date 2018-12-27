@@ -1,176 +1,184 @@
-@font-face {
-    font-family: fancyFont;
-    src: url(fonts/alex-brush/AlexBrush-Regular.ttf);
-}
+/*BASICS*/
 
-@font-face {
-    font-family: fancyFont;
-    src: url(fonts/euphoria);
-}
-
+html,
 body {
+    height: 100%;
+    padding: 0;
+}
+
+.jumbotron {
     margin: 0;
-    padding: 0;
-    width: 100%;
+    background-color: #29292c;
 }
 
-html {
-    display: contents;
+.container {
+    padding: 80px 0px;
 }
 
-header {
-    padding-top: 10px;
-    position: fixed;
-    top: 0;
-    display: block;
-    width: 100%;
-    overflow: hidden;
-    background-color: rgba(90, 90, 90, .99);
-    color: white;
+
+/*NAV*/
+
+#nav {
+    color: #52B5D9;
 }
 
-nav {
-    padding: 0px;
-    text-align: center;
+#nav a {
+    color: #52B5D9;
 }
 
-#section1 {
-    /*background-image: url(images/cable.jpg);*/
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0;
-    height: 900px;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-    margin-bottom: -70px;
-}
-
-#section2 {
-    /*background-image: url(images/glasses.jpg);*/
-    padding: 0;
-    height: 900px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-    margin-bottom: -70px;
-}
-
-#section3 {
-    /*background-image: url(images/pineapple.jpg);*/
-    padding: 0;
-    height: 900px;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-    margin-bottom: -70px;
-}
-
-#section4 {
-    /*background-image: url(images/whale.jpg);*/
-    padding: 0;
-    background-size: cover;
-    height: 900px;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-    margin-bottom: -70px;
-}
-
-#section4 p {
-    font-size: 25px;
-    margin: 30px 150px;
-    text-align: left;
-    padding: 10px;
-}
-
-#section5 {
-    /*background-image: url(tech.jpg);*/
-    padding: 0;
-    height: 900px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 70px;
-    margin-bottom: -70px;
-}
-
-#projects {}
-
-#resume {}
-
-#about {}
-
-#contact {}
-
-a:link {
-    display: inline;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-footer {
-    margin: 0;
-    background-color: #333;
-    color: white;
-    height: 100px;
-    padding: 10px;
-    padding-top: 10px;
+.navbar {
     margin-bottom: 0;
-    bottom: 0;
-    display: block;
+    border-radius: 0;
+    /*position: absolute;*/
     width: 100%;
-    overflow: hidden;
-    background-color: #333;
+    background-color: #2d2d30;
+    border: none;
+}
+
+
+/* Add a dark background color with a little bit see-through */
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+
+/* Add a gray color to all navbar links */
+
+.navbar li a,
+.navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+
+/* On hover, the links will turn white */
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+
+/* The active link */
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+
+/*BANNER*/
+
+#banner {
+    background-image: url(images/cube-crop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#banner div {
+    margin: auto;
+}
+
+#banner h2 {
     color: white;
-    text-align: center;
 }
 
-a:hover {
-    color: wheat;
-}
-
-a:visited {
+#banner p {
     color: white;
 }
 
-h1 {
-    margin: 0;
-    font-size: 130px;
-    font-family: fancyFont;
+#banner .btn-primary {
+    background-color: #52B5D9;
+}
+
+
+/*SECTION 1*/
+
+#one {}
+
+
+/*SECTION 2*/
+
+#two {
+    background-color: #52B5D9;
+}
+
+
+/*SECTION 3*/
+
+
+/*FOOTER*/
+
+#footer p {
+    color: white;
+}
+
+
+/* Icon */
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon:active,
+.icon:hover {
+    text-decoration: none;
+}
+
+.icon>.label {
+    display: none;
+}
+
+.icon.rounded {
+    background-color: #383b43;
+    border-radius: 100%;
+    color: #ffffff;
+    display: inline-block;
+    height: 3.25em;
+    line-height: 3.25em;
     text-align: center;
-    margin-top: 250px;
-    font-weight: bold;
+    width: 3.25em;
 }
 
-h2 {
-    font-size: 70px;
-    margin: 0;
-    font-family: fancyFont;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
+.icon.rounded.big {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
 }
 
-h3 {
-    padding: 0px;
-    margin: 0;
+.icon.rounded.fa-facebook {
+    background-color: #39599f;
 }
 
-p {
-    font-size: 25px;
-    margin: 0;
-    text-align: center;
-    margin-top: 20px;
+.icon.rounded.fa-linkedin {
+    background-color: #31516a;
 }
 
-li {
-    display: inline;
-    padding: inherit;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-div {
-    margin: 0;
-    display: flow-root;
+.icon.rounded.fa-instagram {
+    background-color: #C84274;
 }

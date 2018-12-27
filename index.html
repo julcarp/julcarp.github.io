@@ -1,85 +1,108 @@
 <!DOCTYPE html>
-<!--
-	Transit by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Juliet Carpenter</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/skel-layers.min.js"></script>
-    <script src="js/init.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="scripts-scrolling.js"></script>
-    <noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-xlarge.css" />
-    </noscript>
+    <script src="Chart.js"></script>
+
 </head>
 
-<body class="landing">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!-- Header -->
-    <header id="header">
-        <!--<h1><a href="index.html">Julcarp</a></h1>-->
-        <nav id="nav">
-            <ul>
-                <li><a href=#banner>Home</a></li>
-                <li><a href=#one>About</a></li>
-                <li><a href=#one>Projects</a></li>
-                <li><a href=#one>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="#myPage">Julcarp</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#one">ABOUT</a></li>
+                    <li><a href="#two">PROJECTS</a></li>
+                    <li><a href="#three">SKILLS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <!-- Banner -->
-    <section id="banner">
-        <h2>Hi. I'm Juliet Carpenter.</h2>
-        <p>University of Michigan student studying Computer Science and Engineering</p>
-        <ul class="actions">
-            <li>
-                <a href="#" target="_blank" class="button big">Resume</a>
-            </li>
-        </ul>
+    <section id="banner" class="jumbotron text-center">
+        <div class="container">
+            <h2>Hi. I'm Juliet Carpenter.</h2>
+            <p>University of Michigan student studying Computer Science and Engineering</p>
+
+            <a href="#" target="_blank" class="btn btn-lg btn-primary" role="button">Resume</a>
+        </div>
+
     </section>
 
     <!-- One -->
 
-    <section id="one" class="wrapper style2 special">
+    <section id="one" class="">
         <div class="container">
-            <header class="major">
+            <header class="text-center">
                 <h2>About Me</h2>
                 <p>Here's a little information about me!</p>
             </header>
-            <section class="profiles">
+            <section class="aboutme">
                 <div class="row">
-                    <section class="3u 6u(medium) 12u$(xsmall) profile">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Lorem ipsum</h4>
-                        <p>Lorem ipsum dolor</p>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/wise-my-logo.jpg" class="img-circle person" alt="Women in Science and Engineering Residence Program Logo" width="200" height="200" />
+                        <h4>WISE RP</h4>
+
+                        <p>I'm a mentor and board member in the Women in Science and Engineeering Residence Program</p>
+
                     </section>
-                    <section class="3u 6u$(medium) 12u$(xsmall) profile">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Voluptatem dolores</h4>
-                        <p>Ullam nihil repudi</p>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/geecs-logo-edited.png" class="img-circle person" alt="Girls in EECS logo" width="200" height="200" />
+                        <h4>GEECS</h4>
+
+                        <p>I'm a member of GEECS (Girls in Electrical Engineering and Computer Science)</p>
+
                     </section>
-                    <section class="3u 6u(medium) 12u$(xsmall) profile">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Doloremque quo</h4>
-                        <p>Harum corrupti quia</p>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/goblue.jpg" class="img-circle person" alt="University of Michigan Satdium" width="200" height="200" />
+                        <h4>University of Michigan</h4>
+
+                        <p>I love Michigan football, soccer, and basketball games! GO BLUE!</p>
+
                     </section>
-                    <section class="3u$ 6u$(medium) 12u$(xsmall) profile">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Voluptatem dicta</h4>
-                        <p>Et natus sapiente</p>
+                </div>
+                <div class="row">
+
+                    <section class="col-sm-4 text-center">
+                        <img src="images/maryland-flag.png" class="img-circle person" alt="Maryland flag" width="200" height="200" />
+                        <h4>Maryland</h4>
+
+                        <p>I'm from Rockville, Maryland and have very strong opinions about the Maryland Flag</p>
+
+                    </section>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/playbills.JPG" class="img-circle person" alt="Mean Girls on Broadway Playbill" width="200" height="200" />
+                        <h4>Interests</h4>
+                        <p>I love anything and everything involving running or theater</p>
+
+                    </section>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/uke.JPG" class="img-circle person" alt="Ukulele on floor" width="200" height="200" />
+                        <h4>Hobbies</h4>
+
+                        <p>I enjoy singing and playing the ukulele</p>
+
                     </section>
                 </div>
             </section>
@@ -88,139 +111,91 @@
 
 
     <!-- Two -->
-    <section id="two" class="wrapper style1 special">
+
+    <section id="two" class="">
         <div class="container">
-            <header class="major">
+            <header class="text-center">
                 <h2>Projects</h2>
-                <p>Lorem ipsum dolor sit amet, delectus consequatur, similique quia!</p>
+                <p>Here are some of the projects I've worked on</p>
             </header>
-            <div class="row 150%">
-                <div class="4u 12u$(medium)">
-                    <section class="box">
-                        <i class="icon big rounded color1 fa-cloud"></i>
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam consectetur quibusdam magni minus aut modi aliquid.</p>
+            <section class="">
+                <div class="row">
+                    <header class="text-center">
+                        <h3>Public Projects</h3>
+                        <p>projects that I have made available online</p>
+                    </header>
+
+                    <section class="col-sm-6 text-center">
+                        <img src="images/profile_placeholder.gif" alt="" />
+                        <h4>RPN Calculator</h4>
+                        <p>A simple reverse polish notation calculator written in python</p>
+                    </section>
+                    <section class="col-sm-6 text-center">
+                        <img src="images/profile_placeholder.gif" alt="" />
+                        <h4>Makefile Script</h4>
+                        <p>A script that automatically generates dependencies in a makefile</p>
                     </section>
                 </div>
-                <div class="4u 12u$(medium)">
-                    <section class="box">
-                        <i class="icon big rounded color9 fa-desktop"></i>
-                        <h3>Consectetur adipisicing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ullam consequatur repellat debitis maxime.</p>
+            </section>
+            <section class="">
+                <div class="row">
+                    <header class="text-center">
+                        <h3>Private Projects</h3>
+                        <p>Private projects that I am currently developing or cannot release due to Honor Code Violations</p>
+                    </header>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/profile_placeholder.gif" alt="" />
+                        <h4>Budget Tracker</h4>
+                        <p>An Android app written in java that takes in user input to keep track of transactions for different categories of items</p>
+                    </section>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/profile_placeholder.gif" alt="" />
+                        <h4>SillyQL</h4>
+                        <p>A C++ simplified version of SQL making use of hashing and binary search trees to process large sets of table data efficiently.</p>
+                    </section>
+                    <section class="col-sm-4 text-center">
+                        <img src="images/profile_placeholder.gif" alt="" />
+                        <h4>Euchre</h4>
+                        <p>A C++ version of the card game euchre which handles multiple players, their current hand, and the points they have accumulated. This project uses polymorphism in order to keep track of different players with similar behaviors.</p>
                     </section>
                 </div>
-                <div class="4u$ 12u$(medium)">
-                    <section class="box">
-                        <i class="icon big rounded color6 fa-rocket"></i>
-                        <h3>Adipisicing elit totam</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque eveniet, nesciunt molestias. Ipsam, voluptate vero.</p>
-                    </section>
-                </div>
-            </div>
+            </section>
         </div>
     </section>
 
     <!-- Three -->
-    <section id="three" class="wrapper style3 special">
+    <section id="three" class="">
         <div class="container">
-            <header class="major">
-                <h2>Consectetur adipisicing elit</h2>
-                <p>Lorem ipsum dolor sit amet. Delectus consequatur, similique quia!</p>
+            <header class="text-center">
+                <h2>Skills</h2>
             </header>
-        </div>
-        <div class="container 50%">
-            <form action="#" method="post">
-                <div class="row uniform">
-                    <div class="6u 12u$(small)">
-                        <input name="name" id="name" value="" placeholder="Name" type="text">
-                    </div>
-                    <div class="6u$ 12u$(small)">
-                        <input name="email" id="email" value="" placeholder="Email" type="email">
-                    </div>
-                    <div class="12u$">
-                        <textarea name="message" id="message" placeholder="Message" rows="6"></textarea>
-                    </div>
-                    <div class="12u$">
-                        <ul class="actions">
-                            <li><input value="Send Message" class="special big" type="submit"></li>
-                        </ul>
-                    </div>
-                </div>
-            </form>
+            <section class="col-sm-6 ">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </section>
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer id="footer">
+    <footer class="jumbotron text-center" id="footer">
         <div class="container">
-            <section class="links">
-                <div class="row">
-                    <section class="3u 6u(medium) 12u$(small)">
-                        <h3>Lorem ipsum dolor</h3>
-                        <ul class="unstyled">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Nesciunt itaque, alias possimus</a></li>
-                            <li><a href="#">Optio rerum beatae autem</a></li>
-                            <li><a href="#">Nostrum nemo dolorum facilis</a></li>
-                            <li><a href="#">Quo fugit dolor totam</a></li>
-                        </ul>
-                    </section>
-                    <section class="3u 6u$(medium) 12u$(small)">
-                        <h3>Culpa quia, nesciunt</h3>
-                        <ul class="unstyled">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Reiciendis dicta laboriosam enim</a></li>
-                            <li><a href="#">Corporis, non aut rerum</a></li>
-                            <li><a href="#">Laboriosam nulla voluptas, harum</a></li>
-                            <li><a href="#">Facere eligendi, inventore dolor</a></li>
-                        </ul>
-                    </section>
-                    <section class="3u 6u(medium) 12u$(small)">
-                        <h3>Neque, dolore, facere</h3>
-                        <ul class="unstyled">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Distinctio, inventore quidem nesciunt</a></li>
-                            <li><a href="#">Explicabo inventore itaque autem</a></li>
-                            <li><a href="#">Aperiam harum, sint quibusdam</a></li>
-                            <li><a href="#">Labore excepturi assumenda</a></li>
-                        </ul>
-                    </section>
-                    <section class="3u$ 6u$(medium) 12u$(small)">
-                        <h3>Illum, tempori, saepe</h3>
-                        <ul class="unstyled">
-                            <li><a href="#">Lorem ipsum dolor sit</a></li>
-                            <li><a href="#">Recusandae, culpa necessita nam</a></li>
-                            <li><a href="#">Cupiditate, debitis adipisci blandi</a></li>
-                            <li><a href="#">Tempore nam, enim quia</a></li>
-                            <li><a href="#">Explicabo molestiae dolor labore</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </section>
-            <div class="row">
-                <div class="8u 12u$(medium)">
-                    <ul class="copyright">
-                        <li>&copy; Untitled. All rights reserved.</li>
-                        <li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-                        <li>Images: <a href="http://unsplash.com">Unsplash</a></li>
-                    </ul>
-                </div>
-                <div class="4u$ 12u$(medium)">
-                    <ul class="icons">
-                        <li>
-                            <a class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
-                        </li>
-                        <li>
-                            <a class="icon rounded fa-twitter"><span class="label">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a class="icon rounded fa-google-plus"><span class="label">Google+</span></a>
-                        </li>
-                        <li>
-                            <a class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-                        </li>
-                    </ul>
-                </div>
+            <p>&copy; julcarp.com. All rights reserved.</p>
+            <div class="text-center">
+                <ul class="icons">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/juliet-carpenter-36410915b/" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/julcarp" class="icon rounded fa-github"><span class="label">Github</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/juliet.carpenter.56" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/juliet.carpenter/" class="icon rounded fa-instagram"><span class="label">Instagram</span></a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>
