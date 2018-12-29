@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="scripts-scrolling.js"></script>
-    <script src="Chart.js"></script>
+    <script src="myscript.js"></script>
 
 </head>
 
@@ -32,7 +31,8 @@
                     <li><a href="#myPage">HOME</a></li>
                     <li><a href="#one">ABOUT</a></li>
                     <li><a href="#two">PROJECTS</a></li>
-                    <li><a href="#three">SKILLS</a></li>
+                    <li><a href="#three">PLAYLIST</a></li>
+
                 </ul>
             </div>
         </div>
@@ -44,8 +44,7 @@
         <div class="container">
             <h2>Hi. I'm Juliet Carpenter.</h2>
             <p>University of Michigan student studying Computer Science and Engineering</p>
-
-            <a href="#" target="_blank" class="btn btn-lg btn-primary" role="button">Resume</a>
+            <a href="files/carpenter_resume.pdf" target="_blank" class="btn btn-lg btn-primary" role="button">Resume</a>
         </div>
 
     </section>
@@ -60,21 +59,21 @@
             </header>
             <section class="aboutme">
                 <div class="row">
-                    <section class="col-sm-4 text-center">
+                    <section class="slideanim col-sm-4 text-center">
                         <img src="images/wise-my-logo.jpg" class="img-circle person" alt="Women in Science and Engineering Residence Program Logo" width="200" height="200" />
                         <h4>WISE RP</h4>
 
                         <p>I'm a mentor and board member in the Women in Science and Engineeering Residence Program</p>
 
                     </section>
-                    <section class="col-sm-4 text-center">
+                    <section class="slideanim col-sm-4 text-center">
                         <img src="images/geecs-logo-edited.png" class="img-circle person" alt="Girls in EECS logo" width="200" height="200" />
                         <h4>GEECS</h4>
 
                         <p>I'm a member of GEECS (Girls in Electrical Engineering and Computer Science)</p>
 
                     </section>
-                    <section class="col-sm-4 text-center">
+                    <section class="slideanim col-sm-4 text-center">
                         <img src="images/goblue.jpg" class="img-circle person" alt="University of Michigan Satdium" width="200" height="200" />
                         <h4>University of Michigan</h4>
 
@@ -84,20 +83,20 @@
                 </div>
                 <div class="row">
 
-                    <section class="col-sm-4 text-center">
+                    <section class="slideanim col-sm-4 text-center">
                         <img src="images/maryland-flag.png" class="img-circle person" alt="Maryland flag" width="200" height="200" />
                         <h4>Maryland</h4>
 
                         <p>I'm from Rockville, Maryland and have very strong opinions about the Maryland Flag</p>
 
                     </section>
-                    <section class="col-sm-4 text-center">
+                    <section class="slideanim col-sm-4 text-center">
                         <img src="images/playbills.JPG" class="img-circle person" alt="Mean Girls on Broadway Playbill" width="200" height="200" />
                         <h4>Interests</h4>
                         <p>I love anything and everything involving running or theater</p>
 
                     </section>
-                    <section class="col-sm-4 text-center">
+                    <section class="slideanim col-sm-4 text-center">
                         <img src="images/uke.JPG" class="img-circle person" alt="Ukulele on floor" width="200" height="200" />
                         <h4>Hobbies</h4>
 
@@ -118,45 +117,76 @@
                 <h2>Projects</h2>
                 <p>Here are some of the projects I've worked on</p>
             </header>
+
             <section class="">
                 <div class="row">
                     <header class="text-center">
                         <h3>Public Projects</h3>
-                        <p>projects that I have made available online</p>
-                    </header>
 
-                    <section class="col-sm-6 text-center">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>RPN Calculator</h4>
-                        <p>A simple reverse polish notation calculator written in python</p>
-                    </section>
-                    <section class="col-sm-6 text-center">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Makefile Script</h4>
-                        <p>A script that automatically generates dependencies in a makefile</p>
-                    </section>
+                    </header>
+                    <div id="smaller" class="text-center">
+                        <section class="slideanim col-sm-6 text-center">
+
+                            <div class="card text-white bg-dark mb-3">
+                                <img class="card-img-top" src="images/code-rpn.png" alt="Screenshot of python rpn calculator" />
+                                <div class="card-body">
+                                    <h4 class="card-title">RPN Calculator</h4>
+                                    <p class="card-text">A simple reverse polish notation calculator written in python</p>
+                                    <a href="https://github.com/julcarp/python-rpn" class="btn btn-primary">View on Github</a>
+                                </div>
+                            </div>
+
+                        </section>
+                        <section class="slideanim col-sm-6 text-center">
+                            <div class="card text-white bg-dark mb-3">
+                                <img class="card-img-top" src="images/makefile-script.png" alt="Screenshot of makefile script" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Makefile Script</h4>
+                                    <p class="card-text">A script that automatically generates dependencies in a makefile</p>
+                                    <a href="https://github.com/julcarp/makefile" class="btn btn-primary">View on Github</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </section>
             <section class="">
                 <div class="row">
                     <header class="text-center">
                         <h3>Private Projects</h3>
-                        <p>Private projects that I am currently developing or cannot release due to Honor Code Violations</p>
+
                     </header>
-                    <section class="col-sm-4 text-center">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Budget Tracker</h4>
-                        <p>An Android app written in java that takes in user input to keep track of transactions for different categories of items</p>
+                    <section class="slideanim col-sm-4 text-center">
+                        <div class="card">
+
+                            <img class="card-img-top" style="width:50%; float:right" src="images/budget-tracker1.png" alt="" />
+                            <img class="card-img-top" style="width:50%" src="images/budget-tracker2.png" alt="Screenshots of budget tracker app" />
+                            <div class="card-body">
+                                <h4 class="card-title">Budget Tracker</h4>
+                                <p class="card-text">An Android app written in Java that takes in user input to keep track of transactions for different categories of items.</p>
+
+                            </div>
+                        </div>
                     </section>
-                    <section class="col-sm-4 text-center">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>SillyQL</h4>
-                        <p>A C++ simplified version of SQL making use of hashing and binary search trees to process large sets of table data efficiently.</p>
+                    <section class="slideanim col-sm-4 text-center">
+                        <div class="card">
+                            <img class="card-img-top" src="images/sillyql.png" alt="Sillyql c++ program input" />
+                            <div class="card-body">
+                                <h4 class="card-title">SillyQL</h4>
+                                <p class="card-text">A C++ simplified version of SQL making use of hashing and binary search trees to process large sets of table data efficiently. This program can create, insert into, delete from, generate a hash or bst, join, and remove tables.</p>
+
+                            </div>
+                        </div>
                     </section>
-                    <section class="col-sm-4 text-center">
-                        <img src="images/profile_placeholder.gif" alt="" />
-                        <h4>Euchre</h4>
-                        <p>A C++ version of the card game euchre which handles multiple players, their current hand, and the points they have accumulated. This project uses polymorphism in order to keep track of different players with similar behaviors.</p>
+                    <section class="slideanim col-sm-4 text-center">
+                        <div class="card">
+                            <img class="card-img-top" src="images/euchre.png" alt="euchre program output" />
+                            <div class="card-body">
+                                <h4 class="card-title">Euchre</h4>
+                                <p class="card-text">A C++ version of the card game euchre which handles multiple players, their current hand, and the points they have accumulated. This project uses polymorphism in order to keep track of different players with similar behaviors.</p>
+
+                            </div>
+                        </div>
                     </section>
                 </div>
             </section>
@@ -167,10 +197,11 @@
     <section id="three" class="">
         <div class="container">
             <header class="text-center">
-                <h2>Skills</h2>
+                <h2>My Current Playlist</h2>
+                <p>Just the Playlist I'm currently listening to while I code!</p>
             </header>
-            <section class="col-sm-6 ">
-                <canvas id="myChart" width="400" height="400"></canvas>
+            <section class="slideanim text-center">
+                <iframe src="https://open.spotify.com/embed/user/gizmo3199/playlist/4J1zkRKK4EvMdjnbp3YpBW" width="800" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
             </section>
 
         </div>
@@ -179,7 +210,7 @@
     <!-- Footer -->
     <footer class="jumbotron text-center" id="footer">
         <div class="container">
-            <p>&copy; julcarp.com. All rights reserved.</p>
+            <p>&copy; julcarp.github.io All rights reserved.</p>
             <div class="text-center">
                 <ul class="icons">
 
@@ -187,13 +218,13 @@
                         <a href="https://www.linkedin.com/in/juliet-carpenter-36410915b/" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/julcarp" class="icon rounded fa-github"><span class="label">Github</span></a>
+                        <a href="https://github.com/julcarp" target="_blank" class="icon rounded fa-github"><span class="label">Github</span></a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/juliet.carpenter.56" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
+                        <a href="https://www.facebook.com/juliet.carpenter.56" target="_blank" class="icon rounded fa-facebook"><span class="label">Facebook</span></a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/juliet.carpenter/" class="icon rounded fa-instagram"><span class="label">Instagram</span></a>
+                        <a href="https://www.instagram.com/juliet.carpenter/" target="_blank" class="icon rounded fa-instagram"><span class="label">Instagram</span></a>
                     </li>
                 </ul>
             </div>
